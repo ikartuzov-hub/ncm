@@ -1,0 +1,13 @@
+{
+  "name": "nCm — Nova Colheita da Madeira",
+  "short_name": "nCm",
+  "description": "A tua quinta 2.0 — os programas da Madeira pagam até 85% da modernização",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#12150E",
+  "theme_color": "#12150E",
+  "icons": [
+    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}

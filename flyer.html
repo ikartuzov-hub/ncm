@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>nCm · Colhe o futuro</title>
+<link rel="icon" type="image/svg+xml" href="ncm-icon.svg">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="apple-mobile-web-app-title" content="nCm">
+<meta name="theme-color" content="#12150E">
+<meta property="og:title" content="nCm — Colhe o futuro">
+<meta property="og:description" content="A tua quinta 2.0 por uma fração do preço — os programas da Madeira pagam até 85% da modernização.">
+<meta property="og:image" content="https://ikartuzov-hub.github.io/ncm/og-image.png">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<meta property="og:url" content="https://ikartuzov-hub.github.io/ncm/flyer.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#12150E; --ink:#EFF3E4; --muted:#9AA882; --accent:#E0A63C;
+    --line:#242B1B; --card:#191E12; --btn:#1F2616; --grid:#1A2013;
+  }
+  :root[data-theme="light"]{
+    --bg:#F7F8F1; --ink:#1F2415; --muted:#6E7A55; --accent:#B0771E;
+    --line:#E2E6D2; --card:#FFFFFF; --btn:#EDF0E0; --grid:#EEF1E3;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--ink);font-family:"Inter",system-ui,sans-serif;
+    line-height:1.6;-webkit-font-smoothing:antialiased;min-height:100vh;
+    background-image:linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px);
+    background-size:44px 44px}
+  .wrap{max-width:680px;margin:0 auto;padding:0 22px}
+  .topbar{display:flex;justify-content:space-between;align-items:center;padding:12px 16px;max-width:680px;margin:0 auto}
+  .brand{display:flex;align-items:center;gap:9px;text-decoration:none;color:var(--ink)}
+  .brandmark{width:26px;height:26px;flex:none}
+  .wm{font-family:"Fraunces",serif;font-weight:600;font-size:18px;letter-spacing:.2px}
+  .wm b{color:var(--accent);font-weight:600}
+  .topctrl{display:flex;align-items:center;gap:8px}
+  .rbtn{width:40px;height:40px;min-width:40px;padding:0;border-radius:50%;border:1px solid var(--line);
+    background:var(--btn);color:var(--ink);font-family:inherit;font-size:13px;font-weight:600;cursor:pointer;
+    display:flex;align-items:center;justify-content:center;transition:.15s;flex:none}
+  .rbtn:hover{border-color:var(--accent)}
+  .rbtn:active{transform:scale(.92)}
+  .langwrap{position:relative}
+  .menu{position:absolute;top:48px;right:0;background:var(--card);border:1px solid var(--line);border-radius:12px;
+    padding:6px;min-width:176px;display:none;box-shadow:0 12px 30px rgba(0,0,0,.28);z-index:40}
+  .menu.open{display:block}
+  .menu button{display:flex;gap:10px;align-items:center;width:100%;padding:8px 10px;border-radius:8px;border:none;
+    background:transparent;color:var(--muted);font-family:inherit;font-size:14px;font-weight:500;cursor:pointer;text-align:left}
+  .menu button:hover{background:var(--btn);color:var(--ink)}
+  .menu button.on{color:var(--accent);font-weight:600}
+  .menu .code{display:inline-block;width:26px;font-weight:700;font-size:12px}
+
+  .hero{padding:26px 0 10px}
+  .kicker{font-size:13px;letter-spacing:.16em;text-transform:uppercase;color:var(--accent);font-weight:600;margin-bottom:16px}
+  h1{font-family:"Fraunces",serif;font-weight:600;font-size:clamp(36px,8.5vw,60px);line-height:1.04;letter-spacing:-.6px}
+  .sub{margin-top:18px;font-size:clamp(15px,2.2vw,18px);color:var(--muted);max-width:52ch}
+  .scene{margin:26px 0 8px;border-radius:18px;overflow:hidden;border:1px solid var(--line);background:#0E1109}
+  .ctas{display:flex;flex-wrap:wrap;gap:12px;margin-top:22px}
+  .primary{display:inline-flex;align-items:center;gap:9px;background:var(--accent);color:#171204;
+    border:none;cursor:pointer;text-decoration:none;font-family:inherit;font-weight:600;font-size:16px;
+    padding:14px 26px;border-radius:999px;transition:.15s}
+  .primary:hover{transform:translateY(-1px)}
+  .ghost{display:inline-flex;align-items:center;gap:9px;background:transparent;color:var(--ink);
+    border:1px solid var(--line);cursor:pointer;text-decoration:none;font-family:inherit;font-weight:500;font-size:16px;
+    padding:14px 24px;border-radius:999px;transition:.15s}
+  .ghost:hover{border-color:var(--accent);color:var(--accent)}
+
+  .sec{margin:46px 0 10px}
+  .sec h2{font-family:"Fraunces",serif;font-weight:600;font-size:clamp(22px,4.8vw,32px);margin-bottom:6px}
+  .sec .ss{color:var(--muted);font-size:15px;margin-bottom:20px}
+  .tgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:12px}
+  .tcard{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 18px;position:relative}
+  .tcard .dot{width:9px;height:9px;border-radius:50%;background:var(--accent);margin-bottom:10px;
+    box-shadow:0 0 0 4px color-mix(in srgb, var(--accent) 18%, transparent)}
+  .tcard h3{font-size:15px;font-weight:600}
+  .tcard .g{font-size:13px;color:var(--muted);margin-top:3px}
+  .tcard .pay{font-size:12px;color:var(--accent);margin-top:9px;font-weight:600}
+
+  .proof{background:var(--card);border:1px solid var(--line);border-left:3px solid var(--accent);
+    border-radius:0 14px 14px 0;padding:20px 22px;margin-top:14px}
+  .proof p{font-family:"Fraunces",serif;font-size:clamp(16px,3vw,19px);line-height:1.5}
+  .proof .who{margin-top:10px;font-family:"Inter",sans-serif;font-size:13px;color:var(--muted)}
+
+  .steps{display:grid;gap:14px}
+  .step{display:flex;gap:14px;align-items:flex-start;background:var(--card);border:1px solid var(--line);
+    border-radius:14px;padding:16px 18px}
+  .step .n{font-family:"Fraunces",serif;color:var(--accent);font-weight:600;font-size:20px;flex:none;width:26px}
+  .step p{font-size:15px;color:var(--ink)}
+  footer{padding:34px 0 56px;color:var(--muted);font-size:15px;border-top:1px solid var(--line);margin-top:44px;text-align:center}
+  footer a{color:var(--ink);text-decoration:underline;text-decoration-color:var(--accent);text-underline-offset:4px;
+    display:inline-block;padding:8px 4px;font-weight:500}
+  footer a:hover{color:var(--accent)}
+
+  .pulse{transform-box:fill-box;transform-origin:center;animation:pulse 2.4s ease-out infinite}
+  @keyframes pulse{0%{transform:scale(.4);opacity:.8}100%{transform:scale(2.6);opacity:0}}
+  .scan{animation:scan 6s linear infinite}
+  @keyframes scan{0%{transform:translateX(-40px)}50%{transform:translateX(560px)}100%{transform:translateX(-40px)}}
+  .flow{stroke-dasharray:4 7;animation:flow 1.6s linear infinite}
+  @keyframes flow{to{stroke-dashoffset:-22}}
+  .blink{animation:blink 2.8s ease-in-out infinite}
+  @keyframes blink{0%,100%{opacity:.5}50%{opacity:1}}
+  @media(prefers-reduced-motion:reduce){.pulse,.scan,.flow,.blink{animation:none}.pulse{opacity:0}}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <a class="brand" href="./">
+    <svg class="brandmark" viewBox="0 0 100 100" fill="none" stroke="var(--accent)" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" role="img" aria-label="nCm">
+      <path d="M69 29 A27 27 0 1 0 69 71"/>
+      <path d="M15 88 Q28 82 39 88 Q50 94 61 88 Q72 82 85 88"/>
+    </svg>
+    <span class="wm">n<b>C</b>m</span>
+  </a>
+  <div class="topctrl">
+    <div class="langwrap">
+      <button class="rbtn" id="langBtn" aria-haspopup="true" aria-expanded="false" aria-label="Language">PT</button>
+      <div class="menu" id="langMenu"></div>
+    </div>
+    <button class="rbtn" id="themeBtn" aria-label="Theme">☾</button>
+  </div>
+</div>
+
+<main class="wrap">
+  <section class="hero">
+    <div class="kicker" id="kicker"></div>
+    <h1 id="title"></h1>
+    <p class="sub" id="sub"></p>
+
+    <div class="scene" aria-hidden="true">
+      <svg width="100%" viewBox="0 0 680 300" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0 150 Q120 130 220 150 T460 155 T680 145" fill="none" stroke="#202816" stroke-width="2"/>
+        <path d="M0 190 Q140 168 260 190 T520 196 T680 186" fill="none" stroke="#25301A" stroke-width="2"/>
+        <path d="M0 232 Q150 208 300 232 T680 236" fill="none" stroke="#2B381E" stroke-width="2"/>
+        <path d="M0 272 Q170 250 340 272 T680 274" fill="none" stroke="#31401F" stroke-width="2"/>
+
+        <g stroke="#E0A63C" stroke-width="1" opacity=".55">
+          <path class="flow" d="M120 148 L120 78" fill="none"/>
+          <path class="flow" d="M300 188 L300 78" fill="none" style="animation-delay:.4s"/>
+          <path class="flow" d="M470 152 L470 78" fill="none" style="animation-delay:.8s"/>
+          <path class="flow" d="M590 230 L590 78" fill="none" style="animation-delay:1.2s"/>
+        </g>
+        <g>
+          <circle class="pulse" cx="120" cy="148" r="9" fill="none" stroke="#E0A63C" stroke-width="1.5"/>
+          <circle cx="120" cy="148" r="4.5" fill="#E0A63C"/>
+          <circle class="pulse" cx="300" cy="188" r="9" fill="none" stroke="#E0A63C" stroke-width="1.5" style="animation-delay:.8s"/>
+          <circle cx="300" cy="188" r="4.5" fill="#E0A63C"/>
+          <circle class="pulse" cx="470" cy="152" r="9" fill="none" stroke="#E0A63C" stroke-width="1.5" style="animation-delay:1.6s"/>
+          <circle cx="470" cy="152" r="4.5" fill="#E0A63C"/>
+          <circle class="pulse" cx="590" cy="230" r="9" fill="none" stroke="#E0A63C" stroke-width="1.5" style="animation-delay:.4s"/>
+          <circle cx="590" cy="230" r="4.5" fill="#E0A63C"/>
+        </g>
+
+        <g stroke="#E0A63C" fill="none" stroke-width="1.5" opacity=".9">
+          <rect x="60" y="52" width="560" height="26" rx="13" stroke="#242B1B" fill="#12150E"/>
+          <circle class="blink" cx="84" cy="65" r="3.5" fill="#E0A63C" stroke="none"/>
+          <circle class="blink" cx="104" cy="65" r="3.5" fill="#7CA23C" stroke="none" style="animation-delay:.9s"/>
+          <circle class="blink" cx="124" cy="65" r="3.5" fill="#E0A63C" stroke="none" style="animation-delay:1.7s"/>
+          <path d="M150 65 H600" stroke="#242B1B"/>
+          <path class="flow" d="M150 65 H600" stroke="#E0A63C" opacity=".8"/>
+        </g>
+
+        <g class="scan">
+          <g transform="translate(60,110)">
+            <path d="M-14 -8 L14 8 M-14 8 L14 -8" stroke="#EFF3E4" stroke-width="2" stroke-linecap="round"/>
+            <circle cx="-14" cy="-8" r="4" fill="none" stroke="#EFF3E4" stroke-width="1.5"/>
+            <circle cx="14" cy="-8" r="4" fill="none" stroke="#EFF3E4" stroke-width="1.5"/>
+            <circle cx="-14" cy="8" r="4" fill="none" stroke="#EFF3E4" stroke-width="1.5"/>
+            <circle cx="14" cy="8" r="4" fill="none" stroke="#EFF3E4" stroke-width="1.5"/>
+            <rect x="-6" y="-4" width="12" height="8" rx="2.5" fill="#EFF3E4"/>
+            <path d="M0 6 L-16 40 M0 6 L16 40" stroke="#E0A63C" stroke-width="1" opacity=".5"/>
+          </g>
+        </g>
+
+        <g transform="translate(560,96)" stroke="#E0A63C" stroke-width="1.5" fill="none" opacity=".95">
+          <path d="M0 24 L0 8 Q0 0 8 0 L40 0 Q48 0 48 8 L48 24" />
+          <path d="M8 24 V10 M16 24 V10 M24 24 V10 M32 24 V10 M40 24 V10" opacity=".6"/>
+          <path d="M-6 24 H54"/>
+        </g>
+        <g transform="translate(52,206)" stroke="#E0A63C" stroke-width="1.5" fill="none" opacity=".95">
+          <path d="M2 20 L14 2 L26 20 M14 2 V-6" />
+          <rect x="-4" y="20" width="36" height="3" fill="#E0A63C" stroke="none" opacity=".6"/>
+        </g>
+      </svg>
+    </div>
+
+    <div class="ctas">
+      <a class="primary" id="ctaCheck" href="./"></a>
+      <a class="ghost" id="ctaBot" href="https://t.me/SeedWaveBot" target="_blank" rel="noopener"></a>
+    </div>
+  </section>
+
+  <section class="sec">
+    <h2 id="techTitle"></h2>
+    <p class="ss" id="techSub"></p>
+    <div class="tgrid" id="tgrid"></div>
+  </section>
+
+  <section class="sec">
+    <div class="proof">
+      <p id="proofText"></p>
+      <div class="who">— Igor Kartuzov · Kartofel / Freshland</div>
+    </div>
+  </section>
+
+  <section class="sec">
+    <h2 id="howTitle"></h2>
+    <div class="steps">
+      <div class="step"><div class="n">1</div><p id="s1"></p></div>
+      <div class="step"><div class="n">2</div><p id="s2"></p></div>
+      <div class="step"><div class="n">3</div><p id="s3"></p></div>
+    </div>
+  </section>
+</main>
+
+<footer class="wrap" id="foot"></footer>
+
+<script>
+(function(){
+  var LANGS=[{code:"pt",label:"Português"},{code:"en",label:"English"},{code:"ru",label:"Русский"},{code:"es",label:"Español"},{code:"de",label:"Deutsch"}];
+  var TECH={
+    pt:[["Rega gota a gota","−40% água · +20% colheita"],["Sensores de solo e clima","decisões por dados"],["Estufa inteligente","colheita todo o ano"],["Solar na estufa / armazém","−70% na conta de energia"],["Armazenamento frigorífico","vendes ao preço, não à estação"],["Drone + monitorização","vês o problema antes das perdas"]],
+    en:[["Drip irrigation","−40% water · +20% yield"],["Soil & climate sensors","decisions from data"],["Smart greenhouse","harvest all year"],["Solar on greenhouse / warehouse","−70% energy bill"],["Cold storage","sell at the price, not the season"],["Drone monitoring","see problems before losses"]],
+    ru:[["Капельный полив","−40% воды · +20% урожай"],["Датчики почвы и климата","решения по данным"],["Умная теплица","урожай круглый год"],["Солнце на теплице / складе","−70% счёт за энергию"],["Холодовое хранение","продаёшь по цене, а не по сезону"],["Дрон-мониторинг","видишь проблему до потерь"]],
+    es:[["Riego por goteo","−40% agua · +20% cosecha"],["Sensores de suelo y clima","decisiones por datos"],["Invernadero inteligente","cosecha todo el año"],["Solar en invernadero / almacén","−70% factura de energía"],["Almacén frigorífico","vendes al precio, no a la estación"],["Dron + monitorización","ves el problema antes de las pérdidas"]],
+    de:[["Tröpfchenbewässerung","−40% Wasser · +20% Ertrag"],["Boden- & Klimasensoren","Entscheidungen nach Daten"],["Smartes Gewächshaus","Ernte das ganze Jahr"],["Solar auf Gewächshaus / Lager","−70% Stromrechnung"],["Kühllager","verkauf zum Preis, nicht zur Saison"],["Drohnen-Monitoring","Probleme sehen, bevor sie kosten"]]
+  };
+  var S={
+    pt:{kicker:"Quinta 2.0 · Madeira",title:"Colhe o futuro.",sub:"Rega inteligente, sensores, estufa, frio, solar, drone — os programas da Madeira pagam até 85% da modernização da tua quinta. Tecnologia primeiro. O apoio é o combustível.",ctaCheck:"Montar a minha quinta 2.0 →",ctaBot:"Falar no Telegram",techTitle:"Tecnologias que mudam a conta",techSub:"O que cada uma dá — e quem a paga.",pay:"Programa paga até 85%",proof:"«Durante 26 anos cultivei e armazenei batata — ciclo completo, do campo ao frio. A quinta 2.0, construí-a com as mãos antes de ser tendência.»",howTitle:"Como funciona",s1:"Montas a tua quinta 2.0 no construtor — e vês logo a tua parte do preço.",s2:"7 perguntas — confirmamos os programas e a taxa (jovem agricultor: até 85%).",s3:"Tratamos de tudo: documentos, IFAP, candidatura na janela certa, até ao pagamento."},
+    en:{kicker:"Farm 2.0 · Madeira",title:"Harvest the future.",sub:"Smart irrigation, sensors, greenhouse, cold storage, solar, drone — Madeira's programmes pay up to 85% of your farm's modernization. Technology first. The subsidy is the fuel.",ctaCheck:"Build my farm 2.0 →",ctaBot:"Talk on Telegram",techTitle:"Technologies that change the math",techSub:"What each one delivers — and who pays for it.",pay:"Programme pays up to 85%",proof:"“For 26 years I grew and stored potatoes — full cycle, field to cold room. I built farm 2.0 with my hands before it was a trend.”",howTitle:"How it works",s1:"Build your farm 2.0 in the constructor — and instantly see your share of the price.",s2:"7 questions — we confirm the programmes and your rate (young farmer: up to 85%).",s3:"We handle everything: paperwork, IFAP, application in the right window, through to payout."},
+    ru:{kicker:"Ферма 2.0 · Мадейра",title:"Собери будущее.",sub:"Умный полив, датчики, теплица, холод, солнце, дрон — программы Мадейры оплачивают до 85% модернизации твоего хозяйства. Технологии — вперёд. Субсидия — топливо.",ctaCheck:"Собрать мою ферму 2.0 →",ctaBot:"Написать в Telegram",techTitle:"Технологии, которые меняют математику",techSub:"Что даёт каждая — и кто за неё платит.",pay:"Программа платит до 85%",proof:"«26 лет я выращивал и хранил картофель — полный цикл, от поля до холодильника. Ферму 2.0 я строил руками задолго до того, как это стало трендом.»",howTitle:"Как это работает",s1:"Собираешь свою ферму 2.0 в конструкторе — и сразу видишь свою долю цены.",s2:"7 вопросов — подтверждаем программы и ставку (молодой фермер: до 85%).",s3:"Берём всё на себя: документы, IFAP, заявка в нужное окно, до самой выплаты."},
+    es:{kicker:"Granja 2.0 · Madeira",title:"Cosecha el futuro.",sub:"Riego inteligente, sensores, invernadero, frío, solar, dron — los programas de Madeira pagan hasta el 85% de la modernización de tu explotación. Tecnología primero. La ayuda es el combustible.",ctaCheck:"Montar mi granja 2.0 →",ctaBot:"Hablar en Telegram",techTitle:"Tecnologías que cambian las cuentas",techSub:"Qué aporta cada una — y quién la paga.",pay:"El programa paga hasta el 85%",proof:"«Durante 26 años cultivé y almacené patata — ciclo completo, del campo al frío. La granja 2.0 la construí con mis manos antes de que fuera tendencia.»",howTitle:"Cómo funciona",s1:"Montas tu granja 2.0 en el constructor — y ves al instante tu parte del precio.",s2:"7 preguntas — confirmamos los programas y tu tasa (joven agricultor: hasta 85%).",s3:"Nos ocupamos de todo: documentos, IFAP, solicitud en la ventana correcta, hasta el pago."},
+    de:{kicker:"Hof 2.0 · Madeira",title:"Ernte die Zukunft.",sub:"Smarte Bewässerung, Sensoren, Gewächshaus, Kühlung, Solar, Drohne — Madeiras Programme zahlen bis zu 85% der Modernisierung Ihres Hofs. Technologie zuerst. Die Förderung ist der Treibstoff.",ctaCheck:"Meinen Hof 2.0 bauen →",ctaBot:"Auf Telegram schreiben",techTitle:"Technologien, die die Rechnung ändern",techSub:"Was jede bringt — und wer sie bezahlt.",pay:"Programm zahlt bis zu 85%",proof:"«26 Jahre lang habe ich Kartoffeln angebaut und gelagert — voller Zyklus, vom Feld bis zum Kühlraum. Den Hof 2.0 habe ich mit den Händen gebaut, bevor es ein Trend war.»",howTitle:"So funktioniert es",s1:"Bauen Sie Ihren Hof 2.0 im Konstruktor — und sehen Sie sofort Ihren Anteil am Preis.",s2:"7 Fragen — wir bestätigen die Programme und Ihren Satz (Junglandwirt: bis 85%).",s3:"Wir übernehmen alles: Unterlagen, IFAP, Antrag im richtigen Fenster, bis zur Auszahlung."}
+  };
+  var VALID=["pt","en","ru","es","de"], lang="pt", theme="night";
+  var params=new URLSearchParams(location.search);
+  var pl=params.get("lang"), sl=null; try{sl=localStorage.getItem("ncm-lang")}catch(e){}
+  if(VALID.indexOf(pl)>=0) lang=pl; else if(VALID.indexOf(sl)>=0) lang=sl;
+  var ptm=params.get("theme"), stm=null; try{stm=localStorage.getItem("ncm-theme")}catch(e){}
+  theme=(ptm==="light"||ptm==="night")?ptm:(stm==="light"||stm==="night")?stm:"night";
+  applyTheme(theme);
+
+  function applyTheme(t){theme=t;
+    if(t==="light") document.documentElement.setAttribute("data-theme","light");
+    else document.documentElement.removeAttribute("data-theme");
+    var b=document.getElementById("themeBtn"); if(b) b.textContent=(t==="light")?"☀":"☾";
+    try{localStorage.setItem("ncm-theme",t)}catch(e){}}
+  document.getElementById("themeBtn").onclick=function(){applyTheme(theme==="light"?"night":"light")};
+
+  function qp(url){var s="lang="+lang+"&theme="+theme;return url+(url.indexOf("?")>=0?"&":"?")+s}
+  var lb=document.getElementById("langBtn"), lm=document.getElementById("langMenu");
+  function buildMenu(){lm.innerHTML="";LANGS.forEach(function(l){
+    var b=document.createElement("button"); if(l.code===lang) b.className="on";
+    var c=document.createElement("span"); c.className="code"; c.textContent=l.code.toUpperCase();
+    b.appendChild(c); b.appendChild(document.createTextNode(l.label));
+    b.onclick=function(){lm.classList.remove("open"); if(l.code!==lang){lang=l.code; try{localStorage.setItem("ncm-lang",lang)}catch(e){} render();}};
+    lm.appendChild(b);});}
+  lb.onclick=function(e){e.stopPropagation();var o=lm.classList.toggle("open");lb.setAttribute("aria-expanded",o?"true":"false");if(o)buildMenu();};
+  document.addEventListener("click",function(e){if(!e.target.closest(".langwrap")){lm.classList.remove("open");}});
+
+  function render(){
+    var t=S[lang]||S.pt, tech=TECH[lang]||TECH.pt;
+    document.documentElement.lang=lang;
+    ["kicker","title","sub","techTitle","techSub","howTitle","s1","s2","s3"].forEach(function(id){
+      document.getElementById(id).textContent=t[id]||t[id.replace("tech","tech")];
+    });
+    document.getElementById("kicker").textContent=t.kicker;
+    document.getElementById("title").textContent=t.title;
+    document.getElementById("sub").textContent=t.sub;
+    document.getElementById("techTitle").textContent=t.techTitle;
+    document.getElementById("techSub").textContent=t.techSub;
+    document.getElementById("proofText").textContent=t.proof;
+    document.getElementById("ctaCheck").textContent=t.ctaCheck;
+    document.getElementById("ctaCheck").href=qp("./");
+    document.getElementById("ctaBot").textContent=t.ctaBot;
+    document.getElementById("ctaBot").href="https://t.me/SeedWaveBot?start=ncm_"+lang+"_flyer";
+    var g=document.getElementById("tgrid"); g.innerHTML="";
+    tech.forEach(function(row){
+      var d=document.createElement("div"); d.className="tcard";
+      var dot=document.createElement("div"); dot.className="dot"; d.appendChild(dot);
+      var h=document.createElement("h3"); h.textContent=row[0]; d.appendChild(h);
+      var gg=document.createElement("div"); gg.className="g"; gg.textContent=row[1]; d.appendChild(gg);
+      var p=document.createElement("div"); p.className="pay"; p.textContent=t.pay; d.appendChild(p);
+      g.appendChild(d);
+    });
+    lb.textContent=lang.toUpperCase();
+    document.getElementById("foot").innerHTML='© '+(new Date().getFullYear())+' <a href="'+qp("https://ikartuzov-hub.github.io/seedwave-catalog/hub/")+'" target="_blank" rel="noopener">SeedWave</a> · <a href="https://www.linkedin.com/in/igor-kartuzov/" target="_blank" rel="noopener">Igor Kartuzov</a>';
+  }
+  render();
+})();
+</script>
+</body>
+</html>

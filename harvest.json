@@ -1,0 +1,497 @@
+{
+ "config": {
+  "ctaUrl": "https://t.me/SeedWaveBot",
+  "hubUrl": "https://ikartuzov-hub.github.io/seedwave-catalog/hub/",
+  "linkedinUrl": "https://www.linkedin.com/in/igor-kartuzov/",
+  "updated": "2026-07-08",
+  "techRateBase": 0.65,
+  "techRateYoung": 0.85
+ },
+ "questions": [
+  {
+   "id": "farm",
+   "text": {
+    "pt": "A sua exploração agrícola na Madeira…",
+    "ru": "Ваше хозяйство на Мадейре…",
+    "en": "Your farm in Madeira…"
+   },
+   "options": [
+    {
+     "v": "yes",
+     "label": {
+      "pt": "Já tenho terra / atividade agrícola",
+      "ru": "Уже есть земля / хозяйство",
+      "en": "I already farm land"
+     }
+    },
+    {
+     "v": "plan",
+     "label": {
+      "pt": "Vou começar / instalar-me",
+      "ru": "Планирую начать / зайти в дело",
+      "en": "I plan to start"
+     }
+    }
+   ]
+  },
+  {
+   "id": "young",
+   "text": {
+    "pt": "Idade do responsável pela exploração:",
+    "ru": "Возраст главы хозяйства:",
+    "en": "Age of the farm holder:"
+   },
+   "options": [
+    {
+     "v": "yes",
+     "label": {
+      "pt": "Até 40 anos",
+      "ru": "До 40 лет",
+      "en": "Up to 40"
+     }
+    },
+    {
+     "v": "no",
+     "label": {
+      "pt": "Mais de 40 anos",
+      "ru": "Больше 40 лет",
+      "en": "Over 40"
+     }
+    }
+   ]
+  },
+  {
+   "id": "area",
+   "text": {
+    "pt": "Área que cultiva (SAU):",
+    "ru": "Обрабатываемая площадь (SAU):",
+    "en": "Cultivated area (UAA):"
+   },
+   "options": [
+    {
+     "v": "small",
+     "label": {
+      "pt": "Menos de 0,5 ha",
+      "ru": "Меньше 0,5 га",
+      "en": "Under 0.5 ha"
+     }
+    },
+    {
+     "v": "mid",
+     "label": {
+      "pt": "0,5 – 5 ha",
+      "ru": "0,5 – 5 га",
+      "en": "0.5 – 5 ha"
+     }
+    },
+    {
+     "v": "big",
+     "label": {
+      "pt": "Mais de 5 ha",
+      "ru": "Больше 5 га",
+      "en": "Over 5 ha"
+     }
+    }
+   ]
+  },
+  {
+   "id": "sector",
+   "text": {
+    "pt": "O que produz (ou vai produzir):",
+    "ru": "Что производите (или будете):",
+    "en": "What you produce (or will):"
+   },
+   "options": [
+    {
+     "v": "fruit",
+     "label": {
+      "pt": "Fruta e hortícolas",
+      "ru": "Фрукты и овощи",
+      "en": "Fruit & vegetables"
+     }
+    },
+    {
+     "v": "vine",
+     "label": {
+      "pt": "Vinha / vinho",
+      "ru": "Виноград / вино",
+      "en": "Vine / wine"
+     }
+    },
+    {
+     "v": "animal",
+     "label": {
+      "pt": "Pecuária, mel, laticínios",
+      "ru": "Скот, мёд, молоко",
+      "en": "Livestock, honey, dairy"
+     }
+    },
+    {
+     "v": "transform",
+     "label": {
+      "pt": "Transformação / comercialização",
+      "ru": "Переработка / сбыт",
+      "en": "Processing / trade"
+     }
+    }
+   ]
+  },
+  {
+   "id": "bio",
+   "text": {
+    "pt": "Modo de produção:",
+    "ru": "Способ производства:",
+    "en": "Production method:"
+   },
+   "options": [
+    {
+     "v": "yes",
+     "label": {
+      "pt": "Biológico ou integrado",
+      "ru": "Био или интегрированное",
+      "en": "Organic or integrated"
+     }
+    },
+    {
+     "v": "convert",
+     "label": {
+      "pt": "Quero converter",
+      "ru": "Хочу перейти",
+      "en": "I want to convert"
+     }
+    },
+    {
+     "v": "no",
+     "label": {
+      "pt": "Convencional",
+      "ru": "Обычное",
+      "en": "Conventional"
+     }
+    }
+   ]
+  },
+  {
+   "id": "invest",
+   "text": {
+    "pt": "Investimento planeado (estufas, equipamento, instalações):",
+    "ru": "Планируемые вложения (теплицы, техника, постройки):",
+    "en": "Planned investment (greenhouses, equipment, buildings):"
+   },
+   "options": [
+    {
+     "v": "none",
+     "label": {
+      "pt": "Sem investimento agora",
+      "ru": "Пока без вложений",
+      "en": "None for now"
+     }
+    },
+    {
+     "v": "low",
+     "label": {
+      "pt": "Até 20 000 €",
+      "ru": "До 20 000 €",
+      "en": "Up to €20,000"
+     }
+    },
+    {
+     "v": "mid",
+     "label": {
+      "pt": "20 000 – 100 000 €",
+      "ru": "20 000 – 100 000 €",
+      "en": "€20,000 – 100,000"
+     }
+    },
+    {
+     "v": "high",
+     "label": {
+      "pt": "Mais de 100 000 €",
+      "ru": "Больше 100 000 €",
+      "en": "Over €100,000"
+     }
+    }
+   ]
+  },
+  {
+   "id": "reg",
+   "text": {
+    "pt": "Parcelas registadas no IFAP (iSIP)?",
+    "ru": "Участки зарегистрированы в IFAP (iSIP)?",
+    "en": "Parcels registered with IFAP (iSIP)?"
+   },
+   "options": [
+    {
+     "v": "yes",
+     "label": {
+      "pt": "Sim, já registadas",
+      "ru": "Да, уже внесены",
+      "en": "Yes, registered"
+     }
+    },
+    {
+     "v": "no",
+     "label": {
+      "pt": "Ainda não",
+      "ru": "Ещё нет",
+      "en": "Not yet"
+     }
+    }
+   ]
+  }
+ ],
+ "programs": [
+  {
+   "id": "posei",
+   "name": {
+    "pt": "POSEI Madeira — ajudas diretas à produção",
+    "ru": "POSEI Madeira — прямые выплаты на производство",
+    "en": "POSEI Madeira — direct production aid"
+   },
+   "desc": {
+    "pt": "Pagamentos anuais aos produtores da Madeira por fileira (fruta, vinha, pecuária, mel).",
+    "ru": "Ежегодные выплаты производителям Мадейры по направлениям (фрукты, виноград, скот, мёд).",
+    "en": "Annual payments to Madeira producers by sector (fruit, vine, livestock, honey)."
+   },
+   "min": 500,
+   "max": 8000,
+   "status": "open",
+   "match": {
+    "sector": [
+     "fruit",
+     "vine",
+     "animal"
+    ]
+   }
+  },
+  {
+   "id": "base",
+   "name": {
+    "pt": "Pagamento base + pequeno agricultor (Pedido Único)",
+    "ru": "Базовая выплата + малый фермер (Pedido Único)",
+    "en": "Base payment + small farmer (Single Application)"
+   },
+   "desc": {
+    "pt": "Apoio anual por hectare via Pedido Único, com majoração para pequenas explorações.",
+    "ru": "Ежегодная выплата на гектар через Pedido Único, с надбавкой малым хозяйствам.",
+    "en": "Annual per-hectare support via the Single Application, boosted for small farms."
+   },
+   "min": 300,
+   "max": 3000,
+   "status": "open",
+   "match": {
+    "farm": "yes"
+   }
+  },
+  {
+   "id": "anc",
+   "name": {
+    "pt": "Apoio a zonas desfavorecidas (ANC)",
+    "ru": "Выплаты за неблагоприятные зоны (ANC)",
+    "en": "Areas of Natural Constraint support (ANC)"
+   },
+   "desc": {
+    "pt": "Compensação anual por hectare para explorações em zona de montanha — quase toda a Madeira.",
+    "ru": "Ежегодная компенсация на гектар для хозяйств в горной зоне — почти вся Мадейра.",
+    "en": "Annual per-hectare compensation for mountain-zone farms — most of Madeira."
+   },
+   "min": 200,
+   "max": 2500,
+   "status": "open",
+   "match": {
+    "area": [
+     "mid",
+     "big"
+    ]
+   }
+  },
+  {
+   "id": "bio",
+   "name": {
+    "pt": "Agricultura biológica / produção integrada",
+    "ru": "Био-земледелие / интегрированное производство",
+    "en": "Organic / integrated farming"
+   },
+   "desc": {
+    "pt": "Apoio agroambiental anual por hectare para conversão e manutenção do modo biológico.",
+    "ru": "Ежегодная агроэкологическая выплата на гектар за переход и поддержание био-режима.",
+    "en": "Annual agri-environment per-hectare aid for organic conversion and upkeep."
+   },
+   "min": 400,
+   "max": 6000,
+   "status": "window",
+   "match": {
+    "bio": [
+     "yes",
+     "convert"
+    ]
+   }
+  },
+  {
+   "id": "jovem",
+   "name": {
+    "pt": "Prémio instalação jovem agricultor (F.1.2)",
+    "ru": "Премия за первую установку молодого фермера (F.1.2)",
+    "en": "Young farmer setup premium (F.1.2)"
+   },
+   "desc": {
+    "pt": "Prémio à primeira instalação para responsável até 40 anos, com majorações por exclusividade e escala.",
+    "ru": "Премия за первое вхождение в дело для главы до 40 лет, с надбавками за эксклюзивность и масштаб.",
+    "en": "First-setup premium for a holder up to 40, with top-ups for exclusivity and scale."
+   },
+   "min": 20000,
+   "max": 30000,
+   "status": "aviso",
+   "match": {
+    "young": "yes"
+   }
+  },
+  {
+   "id": "invprod",
+   "name": {
+    "pt": "F.1 — Investimento produtivo (média dimensão)",
+    "ru": "F.1 — Продуктивные инвестиции (средний размер)",
+    "en": "F.1 — Productive investment (mid-scale)"
+   },
+   "desc": {
+    "pt": "Cofinanciamento até 85% de estufas, equipamento e melhorias na exploração (20–100 mil €).",
+    "ru": "Софинансирование до 85% теплиц, техники и улучшений хозяйства (20–100 тыс. €).",
+    "en": "Up to 85% co-financing of greenhouses, equipment and farm upgrades (€20–100k)."
+   },
+   "min": 10000,
+   "max": 50000,
+   "status": "aviso",
+   "tierB": true,
+   "match": {
+    "invest": "mid"
+   }
+  },
+  {
+   "id": "transf",
+   "name": {
+    "pt": "F.1 — Transformação e comercialização",
+    "ru": "F.1 — Переработка и сбыт",
+    "en": "F.1 — Processing & marketing"
+   },
+   "desc": {
+    "pt": "Apoio a linhas de transformação, armazém e comercialização de produtos agrícolas próprios.",
+    "ru": "Поддержка линий переработки, склада и сбыта собственной сельхозпродукции.",
+    "en": "Support for processing lines, storage and marketing of own farm products."
+   },
+   "min": 30000,
+   "max": 200000,
+   "status": "aviso",
+   "tierB": true,
+   "match": {
+    "sector": "transform"
+   }
+  },
+  {
+   "id": "invhigh",
+   "name": {
+    "pt": "F.1 — Investimento de grande dimensão",
+    "ru": "F.1 — Крупные инвестиции",
+    "en": "F.1 — Large-scale investment"
+   },
+   "desc": {
+    "pt": "Projetos acima de 100 mil € — infraestrutura, plantações e instalações da exploração.",
+    "ru": "Проекты свыше 100 тыс. € — инфраструктура, посадки и постройки хозяйства.",
+    "en": "Projects above €100k — infrastructure, plantings and farm buildings."
+   },
+   "min": 50000,
+   "max": 300000,
+   "status": "aviso",
+   "tierB": true,
+   "match": {
+    "invest": "high"
+   }
+  }
+ ],
+ "technologies": [
+  {
+   "id": "drip",
+   "cost": 6000,
+   "name": {
+    "pt": "Rega gota a gota + fertirrigação",
+    "ru": "Капельный полив + фертигация",
+    "en": "Drip irrigation + fertigation"
+   },
+   "gain": {
+    "pt": "−40% água · +20% colheita",
+    "ru": "−40% воды · +20% урожай",
+    "en": "−40% water · +20% yield"
+   }
+  },
+  {
+   "id": "sens",
+   "cost": 3500,
+   "name": {
+    "pt": "Sensores de solo e clima",
+    "ru": "Датчики почвы и климата",
+    "en": "Soil & climate sensors"
+   },
+   "gain": {
+    "pt": "decisões por dados, não por palpite",
+    "ru": "решения по данным, а не наугад",
+    "en": "decisions from data, not guesswork"
+   }
+  },
+  {
+   "id": "green",
+   "cost": 28000,
+   "name": {
+    "pt": "Estufa inteligente",
+    "ru": "Умная теплица",
+    "en": "Smart greenhouse"
+   },
+   "gain": {
+    "pt": "clima controlado · colheita todo o ano",
+    "ru": "климат-контроль · урожай круглый год",
+    "en": "climate control · year-round harvest"
+   }
+  },
+  {
+   "id": "sun",
+   "cost": 14000,
+   "bridge": "nem",
+   "name": {
+    "pt": "Solar na estufa / armazém",
+    "ru": "Солнце на теплице / складе",
+    "en": "Solar on greenhouse / warehouse"
+   },
+   "gain": {
+    "pt": "−70% na conta de energia",
+    "ru": "−70% счёт за энергию",
+    "en": "−70% energy bill"
+   }
+  },
+  {
+   "id": "cold",
+   "cost": 32000,
+   "proof": "kartofel",
+   "name": {
+    "pt": "Armazenamento frigorífico",
+    "ru": "Холодовое хранение",
+    "en": "Cold storage"
+   },
+   "gain": {
+    "pt": "vendes ao preço, não à estação",
+    "ru": "продаёшь по цене, а не по сезону",
+    "en": "sell at the price, not the season"
+   }
+  },
+  {
+   "id": "drone",
+   "cost": 5500,
+   "name": {
+    "pt": "Drone + monitorização",
+    "ru": "Дрон-мониторинг",
+    "en": "Drone monitoring"
+   },
+   "gain": {
+    "pt": "vês o problema antes das perdas",
+    "ru": "видишь проблему до потерь",
+    "en": "see the problem before the losses"
+   }
+  }
+ ]
+}
