@@ -11,10 +11,10 @@
 <meta name="theme-color" content="#12150E">
 <meta property="og:title" content="nCm — Colhe o futuro">
 <meta property="og:description" content="A tua quinta 2.0 por uma fração do preço: os programas da Madeira pagam até 85% da modernização. Monta a tua e vê o teu número.">
-<meta property="og:image" content="https://ikartuzov-hub.github.io/ncm/og-image.png">
+<meta property="og:image" content="https://ncm.seedwave.pt/og-image.png">
 <meta property="og:type" content="website">
 <meta name="twitter:card" content="summary_large_image">
-<meta property="og:url" content="https://ikartuzov-hub.github.io/ncm/">
+<meta property="og:url" content="https://ncm.seedwave.pt/">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
@@ -141,6 +141,7 @@
   footer a:hover{color:var(--accent)}
   @media(prefers-reduced-motion:reduce){*{transition:none!important}}
 </style>
+<link rel="canonical" href="https://ncm.seedwave.pt/">
 </head>
 <body>
 
@@ -501,7 +502,7 @@
   };
   document.getElementById("restartBtn").onclick=function(){step=0;answers={};sel={};updateCounter();show("hero")};
   document.getElementById("shareBtn").onclick=function(){
-    var url="https://ikartuzov-hub.github.io/ncm/?lang="+lang, text=T("shareText");
+    var url="https://ncm.seedwave.pt/?lang="+lang, text=T("shareText");
     if(navigator.share){navigator.share({title:"nCm",text:text,url:url}).catch(function(){})}
     else{
       var full=text+" "+url, btn=this, old=T("shareBtn");
